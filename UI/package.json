@@ -1,0 +1,14 @@
+{
+  "name": "dockerandnode",
+  "version": "1.0.0",
+  "description": "Comunication between mongodb and node in docker containers.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ./UI/main.js"
+  },
+  "author": "victor",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.8.7"
+  }
+}
