@@ -1,0 +1,3 @@
+#1 $> docker run --link mymongo -v $(pwd):/var/mydir -w "/var/mydir" node  npm start      -> to run it from shell
+
+#1 $> docker build    -> to createa new image base on our node code
