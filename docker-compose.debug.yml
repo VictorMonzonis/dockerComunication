@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+
+  uinode:
+    build:
+      context: ./UI
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: debug
+    networks: 
+      - local-net
+
+  mymongo:
+    image: mongo
+    networks: 
+      - local-net
+
+networks: 
+  local-net:
+    driver:  bridge 

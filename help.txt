@@ -1,0 +1,21 @@
+#1    docker-compose build    - > to create the images
+#2    docker-compose up       - > to create the containers
+
+NOTE: The result should be like:
+Starting dockercomunication_mymongo_1
+Starting dockercomunication_uinode_1
+Attaching to dockercomunication_mymongo_1, dockercomunication_uinode_1
+mymongo_1  | 2017-03-14T23:12:17.484+0000 I CONTROL  [initandlisten]     distmod: debian81
+mymongo_1  | 2017-03-14T23:12:17.490+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to '
+uinode_1   | ##We are in: debug
+uinode_1   | ##Waiting for mongo
+mymongo_1  | 2017-03-14T23:12:19.595+0000 I CONTROL  [initandlisten]
+mymongo_1  | 2017-03-14T23:12:19.599+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+mymongo_1  | 2017-03-14T23:12:19.600+0000 I NETWORK  [thread1] waiting for connections on port 27017
+uinode_1   | ##End waiting for mongo
+mymongo_1  | 2017-03-14T23:12:23.288+0000 I NETWORK  [thread1] connection accepted from 172.18.0.2:55528 #1 (1 connection now open)
+mymongo_1  | 2017-03-14T23:12:23.296+0000 I NETWORK  [conn1] received client metadata from 172.18.0.2:55528 conn1: { driver: { name: "nodejs", version: "2.2.24" }, os: { type: "Linux", n
+uinode_1   | Silence
+mymongo_1  | 2017-03-14T23:12:23.365+0000 I NETWORK  [thread1] connection accepted from 172.18.0.2:55530 #2 (2 connections now open)
+uinode_1   | ##It has been inserted
+uinode_1   | ##Added into the Mongo DB Yupiiiii!!
